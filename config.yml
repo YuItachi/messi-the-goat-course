@@ -1,0 +1,16 @@
+title: MESSI - THE GOAT
+description: 为什么梅西是有史以来最伟大的足球运动员
+template:
+  repo: messi-the-goat-template
+  name: messi-the-goat
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
